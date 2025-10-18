@@ -17,12 +17,21 @@ screen.onkey(fun= player.go_up, key="Up")
 car = CarManager()
 
 
-game_over = False
-while not game_over:
+game_is_on = True
+while game_is_on:
     time.sleep(0.05)
     screen.update()
+    
     car.create_car()
     car.move_cars()
+    
+    #Detect when the Turtle collides with a Car 
+    for c in car.all_cars:
+        if player.distance(c) <= 20:
+            game_is_on = False
+            
+
+        
     
     
 
