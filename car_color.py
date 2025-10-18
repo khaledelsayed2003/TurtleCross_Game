@@ -1,38 +1,36 @@
-car_colors = [
-    # Basic colors
-    "black", "white", "red", "green", "blue", "yellow", "cyan", "magenta",
+turtle_colors = [
+    # Strong basics
+    "black", "red", "green", "blue", "yellow", "cyan", "magenta",
 
-    # Gray tones
-    "gray", "lightgray", "darkgray", "dimgray", "slategray", "gainsboro",
+    # Gray tones (only darker ones)
+    "gray", "dimgray", "slategray",
 
     # Browns and earth tones
-    "brown", "chocolate", "sienna", "saddlebrown", "tan", "wheat", "beige", "burlywood",
+    "brown", "chocolate", "sienna", "saddlebrown", "tan", "burlywood",
 
     # Oranges and warm tones
     "orange", "darkorange", "coral", "tomato", "salmon", "lightsalmon", "peachpuff",
 
     # Pinks and purples
-    "pink", "lightpink", "deeppink", "hotpink", "violet", "plum",
-    "orchid", "lavender", "thistle", "magenta", "purple", "indigo",
+    "pink", "deeppink", "hotpink", "violet", "plum",
+    "orchid", "magenta", "purple", "indigo",
 
     # Blues
-    "blue", "deepskyblue", "skyblue", "lightblue", "dodgerblue",
-    "steelblue", "royalblue", "navy", "slateblue", "mediumblue", "darkblue",
+    "deepskyblue", "skyblue", "dodgerblue",
+    "steelblue", "royalblue", "navy", "mediumblue", "darkblue",
 
     # Greens
-    "green", "lime", "forestgreen", "darkgreen", "seagreen",
-    "lightgreen", "mediumseagreen", "springgreen", "lawngreen", "palegreen",
+    "lime", "forestgreen", "darkgreen", "seagreen",
+    "mediumseagreen", "springgreen", "lawngreen", "palegreen",
 
-    # Yellows
-    "yellow", "lightyellow", "lemonchiffon", "khaki", "gold", "goldenrod", "darkkhaki",
+    # Yellows (only bold ones)
+    "yellow", "gold", "goldenrod", "darkkhaki",
 
     # Aquas / turquoises
-    "aqua", "turquoise", "darkturquoise", "mediumturquoise",
-    "paleturquoise", "cadetblue", "teal", "aquamarine",
+    "turquoise", "darkturquoise", "mediumturquoise",
+    "cadetblue", "teal", "aquamarine",
 
     # Reds
-    "firebrick", "crimson", "darkred", "indianred",
-
-    # Extras
-    "azure", "mintcream", "honeydew", "snow", "ivory", "linen", "mistyrose"
+    "firebrick", "crimson", "darkred", "indianred"
 ]
+
