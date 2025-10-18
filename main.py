@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen
 from player import Player
-from car_manager import CarManager, STARTING_MOVE_DISTANCE
+from car_manager import CarManager
+from scoreboard import Score
 import time
 
 screen = Screen()
@@ -15,6 +16,7 @@ screen.listen()
 screen.onkey(fun= player.go_up, key="Up")
 
 car = CarManager()
+game_level = Score()
 
 
 game_is_on = True
@@ -29,6 +31,7 @@ while game_is_on:
     #Detect when the Turtle collides with a Car 
     for c in car.all_cars:
         if player.distance(c) <= 20:
+            game_level.game_over()
             game_is_on = False
             
     
@@ -36,7 +39,7 @@ while game_is_on:
     if player.is_player_reach_goal():
         player.go_to_starting_position()
         car.level_up()
-        
+        game_level.refresh()
     
     
             
