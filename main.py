@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
 from player import Player
-from car_manager import CarManager
+from car_manager import CarManager, STARTING_MOVE_DISTANCE
 import time
 
 screen = Screen()
@@ -24,11 +24,21 @@ while game_is_on:
     
     car.create_car()
     car.move_cars()
+        
     
     #Detect when the Turtle collides with a Car 
     for c in car.all_cars:
         if player.distance(c) <= 20:
             game_is_on = False
+            
+    
+    #Detcet successful crossing & increase level(increase cars speed)
+    if player.is_player_reach_goal():
+        player.go_to_starting_position()
+        car.level_up()
+        
+    
+    
             
 
         
