@@ -1,4 +1,4 @@
-turtle_colors = [
+car_colors = [
     # Strong basics
     "black", "red", "green", "blue", "yellow", "cyan", "magenta",
 
